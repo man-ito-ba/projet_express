@@ -1,3 +1,8 @@
+// Adresse du montage sur 123D.circuits.io où tu trouveras l'ensemble des composants nommés ! Pour cela, clique simplement sur chaque élément :)
+	// https://circuits.io/circuits/2409607
+// Adresse du plan sur Sketchboard
+	// https://sketchboard.me/Pz0gaDj1ZIQG
+
 /*Déclarations*/
 //matériel
 // source d'entrée en volt
