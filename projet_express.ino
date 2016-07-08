@@ -35,18 +35,12 @@ void setup()
 	}
 	pinMode(Entree, INPUT); // initialisation du matos d'entrée qui déclenche le reste
 	V_entree, Entree_reelle = 0;
-	//initialisation du Port série
-		Serial.begin(9600);
-		Serial.println("***************");
-		Serial.println("Start");
 }
 
 void loop()
 {
 	Entree_reelle = analogRead(Entree);
-	Serial.println(Entree_reelle);
 	V_entree = map(Entree_reelle, 0, 1023, 0, 186); // On mappe l'entrée électrique lu analogiquement entre 0 et 186 (pour simuler le rapport entre 0 et 1,86V)
-	Serial.println(V_entree);
 	if(V_entree < 100){		// en dessous de 100 (1V, cf. le mappage de 0 à 186), on a la première fonction
 	    Zero_a_Un();
 	}
